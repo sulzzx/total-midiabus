@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Total MidiaBus | Mídia Exterior em Ônibus</title>
+<meta name="description" content="Total MidiaBus transforma ônibus em outdoors móveis. Plotagem profissional em três formatos: BackBus, BackSeat e Plotagem Total. Leve sua marca para as ruas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%234E6089'/%3E%3Cpath d='M50 2a48 48 0 0 1 0 96Z' fill='%23EE8A34'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo" aria-label="Total MidiaBus - página inicial">
+      <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="48" fill="#4E6089"/>
+        <path d="M50 2a48 48 0 0 1 0 96Z" fill="#EE8A34"/>
+        <path d="M50 26c-9.4 0-17 7.6-17 17 0 12.7 17 29 17 29s17-16.3 17-29c0-9.4-7.6-17-17-17z" fill="#fff"/>
+        <circle cx="50" cy="43" r="7" fill="#4E6089"/>
+      </svg>
+      <span class="logo-text">Total<span class="accent">Midia</span>Bus</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="#inicio" class="nav-link active">Início</a></li>
+        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+        <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="https://corrida-minas-run.vercel.app/" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Minas Run ↗</a>
+      <a href="#contato" class="btn btn-primary btn-sm">Solicitar Orçamento</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <span class="eyebrow">Mídia Exterior de Alto Impacto</span>
+        <h1>Sua marca rodando <span class="accent">a cidade inteira</span></h1>
+        <p class="hero-lead">A Total MidiaBus transforma a frota urbana em outdoors móveis. Enviamos sua identidade visual, você escolhe o formato e nós cuidamos de tudo: da arte à instalação.</p>
+        <div class="hero-cta">
+          <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+          <a href="#servicos" class="btn btn-outline">Ver Formatos de Plotagem</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong data-count="500" data-suffix="+">0</strong><span>Ônibus plotados</span></li>
+          <li><strong data-count="120" data-suffix="+">0</strong><span>Marcas atendidas</span></li>
+          <li><strong data-count="2" data-suffix="M+">0</strong><span>Pessoas impactadas/mês</span></li>
+          <li><strong data-count="3" data-suffix="+">0</strong><span>Anos de estrada</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal">
+        <svg class="bus-illustration" viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="busTitle">
+          <title id="busTitle">Ônibus plotado com as cores da Total MidiaBus</title>
+          <defs>
+            <clipPath id="busClip">
+              <rect x="90" y="90" width="700" height="160" rx="26"/>
+            </clipPath>
+          </defs>
+
+          <ellipse class="bus-shadow" cx="440" cy="330" rx="360" ry="16"/>
+
+          <rect x="76" y="116" width="16" height="26" rx="5" class="bus-outline-fill"/>
+
+          <g clip-path="url(#busClip)">
+            <rect x="90" y="90" width="700" height="160" class="bus-blue"/>
+            <polygon points="560,90 790,90 790,250 400,250" class="bus-orange"/>
+          </g>
+
+          <rect x="90" y="90" width="700" height="160" rx="26" class="bus-outline"/>
+
+          <path d="M90,130 Q90,90 130,90 L150,90 L150,140 L96,140 Q90,140 90,130 Z" class="bus-glass-front"/>
+
+          <g class="bus-window">
+            <rect x="180" y="112" width="54" height="46" rx="8"/>
+            <rect x="246" y="112" width="54" height="46" rx="8"/>
+            <rect x="312" y="112" width="54" height="46" rx="8"/>
+            <rect x="378" y="112" width="54" height="46" rx="8"/>
+            <rect x="444" y="112" width="54" height="46" rx="8"/>
+            <rect x="510" y="112" width="54" height="46" rx="8"/>
+            <rect x="576" y="112" width="54" height="46" rx="8"/>
+            <rect x="642" y="112" width="54" height="46" rx="8"/>
+            <rect x="708" y="112" width="38" height="46" rx="8"/>
+          </g>
+
+          <line x1="120" y1="160" x2="120" y2="248" class="bus-door"/>
+
+          <rect x="84" y="246" width="712" height="10" rx="5" class="bus-bumper"/>
+
+          <rect x="98" y="200" width="16" height="10" rx="3" class="bus-headlight"/>
+          <rect x="766" y="200" width="16" height="10" rx="3" class="bus-taillight"/>
+
+          <g class="wheel-group">
+            <circle cx="230" cy="258" r="36"/>
+            <circle cx="650" cy="258" r="36"/>
+          </g>
+          <g class="hub-group">
+            <circle cx="230" cy="258" r="15"/>
+            <circle cx="650" cy="258" r="15"/>
+          </g>
+
+          <text x="440" y="216" text-anchor="middle" class="bus-wordmark">TOTAL <tspan class="bus-wordmark-accent">MIDIA</tspan>BUS</text>
+        </svg>
+        <div class="floating-badge badge-1">📍 Cobertura em várias cidades</div>
+        <div class="floating-badge badge-2">📈 +2M de olhares por mês</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS / FORMATOS ===== -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Formatos de Plotagem</span>
+        <h2>Três formas de colocar sua marca nas ruas</h2>
+        <p>Escolha o formato que combina com sua estratégia e orçamento. Em todos eles, cuidamos do projeto gráfico, da impressão e da instalação na frota.</p>
+      </div>
+
+      <div class="service-grid">
+
+        <article class="service-card reveal">
+          <div class="service-icon icon-back">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="8" y="14" width="48" height="34" rx="8" fill="none" stroke="currentColor" stroke-width="3"/>
+              <rect x="16" y="20" width="32" height="14" rx="3" fill="currentColor" opacity=".18"/>
+              <circle cx="20" cy="50" r="5" fill="currentColor"/>
+              <circle cx="44" cy="50" r="5" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="service-tag">Formato 01</span>
+          <h3>BackBus</h3>
+          <p>Plotagem na traseira do ônibus — o ponto mais visto no trânsito. Ideal para gerar visibilidade constante em engarrafamentos, semáforos e cruzamentos.</p>
+          <ul class="service-list">
+            <li>Alta exposição em vias de tráfego intenso</li>
+            <li>Ótimo custo-benefício</li>
+            <li>Instalação rápida, sem parar a frota</li>
+          </ul>
+          <a href="#contato" class="service-link">Quero este formato →</a>
+        </article>
+
+        <article class="service-card featured reveal">
+          <div class="service-icon icon-seat">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M18 44V22a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v22" fill="none" stroke="currentColor" stroke-width="3"/>
+              <path d="M14 44h36v6a4 4 0 0 1-4 4H18a4 4 0 0 1-4-4v-6z" fill="currentColor" opacity=".18" stroke="currentColor" stroke-width="3"/>
+            </svg>
+          </div>
+          <span class="service-tag">Formato 02</span>
+          <h3>BackSeat</h3>
+          <p>Plotagem na traseira dos bancos internos. Contato direto e prolongado com o passageiro durante todo o trajeto — atenção total, sem distrações.</p>
+          <ul class="service-list">
+            <li>Exposição prolongada por viagem</li>
+            <li>Ideal para QR codes e chamadas de ação</li>
+            <li>Alta taxa de retenção da mensagem</li>
+          </ul>
+          <a href="#contato" class="service-link">Quero este formato →</a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-icon icon-full">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="6" y="20" width="52" height="24" rx="8" fill="none" stroke="currentColor" stroke-width="3"/>
+              <rect x="12" y="25" width="10" height="9" rx="2" fill="currentColor" opacity=".2"/>
+              <rect x="26" y="25" width="10" height="9" rx="2" fill="currentColor" opacity=".2"/>
+              <rect x="40" y="25" width="10" height="9" rx="2" fill="currentColor" opacity=".2"/>
+              <circle cx="18" cy="47" r="5" fill="currentColor"/>
+              <circle cx="46" cy="47" r="5" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="service-tag">Formato 03</span>
+          <h3>Plotagem Total</h3>
+          <p>O ônibus inteiro se transforma em um outdoor 360°. Máxima visibilidade e impacto de marca, impossível de ignorar em qualquer ângulo.</p>
+          <ul class="service-list">
+            <li>Visibilidade máxima em toda a cidade</li>
+            <li>Reforço de marca em grande escala</li>
+            <li>Ideal para lançamentos e campanhas fortes</li>
+          </ul>
+          <a href="#contato" class="service-link">Quero este formato →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMO FUNCIONA ===== -->
+  <section class="how" id="como-funciona">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Processo</span>
+        <h2>Como funciona</h2>
+        <p>Do envio da sua marca até o ônibus rodando na rua, o processo é simples e acompanhado de perto pela nossa equipe.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-number">01</span>
+          <h3>Envie sua marca</h3>
+          <p>Você encaminha sua identidade visual, briefing e objetivos da campanha.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-number">02</span>
+          <h3>Escolha o formato</h3>
+          <p>Definimos juntos o melhor formato: BackBus, BackSeat ou Plotagem Total.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-number">03</span>
+          <h3>Aprovação da arte</h3>
+          <p>Nossa equipe cria a arte de plotagem e você aprova antes da produção.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-number">04</span>
+          <h3>Instalação na frota</h3>
+          <p>Aplicamos a plotagem nos ônibus selecionados e sua marca começa a rodar.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section class="differentials" id="sobre">
+    <div class="container differentials-inner">
+      <div class="differentials-visual reveal">
+        <svg viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" class="bus-illustration bus-illustration-alt" aria-hidden="true">
+          <defs>
+            <clipPath id="busClip2">
+              <rect x="90" y="90" width="700" height="160" rx="26"/>
+            </clipPath>
+          </defs>
+          <ellipse class="bus-shadow" cx="440" cy="330" rx="360" ry="16"/>
+          <g clip-path="url(#busClip2)">
+            <rect x="90" y="90" width="700" height="160" class="bus-orange"/>
+            <polygon points="90,90 340,90 340,250 90,250" class="bus-blue"/>
+          </g>
+          <rect x="90" y="90" width="700" height="160" rx="26" class="bus-outline"/>
+          <g class="bus-window">
+            <rect x="180" y="112" width="54" height="46" rx="8"/>
+            <rect x="246" y="112" width="54" height="46" rx="8"/>
+            <rect x="312" y="112" width="54" height="46" rx="8"/>
+            <rect x="378" y="112" width="54" height="46" rx="8"/>
+            <rect x="444" y="112" width="54" height="46" rx="8"/>
+            <rect x="510" y="112" width="54" height="46" rx="8"/>
+            <rect x="576" y="112" width="54" height="46" rx="8"/>
+            <rect x="642" y="112" width="54" height="46" rx="8"/>
+            <rect x="708" y="112" width="38" height="46" rx="8"/>
+          </g>
+          <rect x="84" y="246" width="712" height="10" rx="5" class="bus-bumper"/>
+          <g class="wheel-group">
+            <circle cx="230" cy="258" r="36"/>
+            <circle cx="650" cy="258" r="36"/>
+          </g>
+          <g class="hub-group">
+            <circle cx="230" cy="258" r="15"/>
+            <circle cx="650" cy="258" r="15"/>
+          </g>
+          <text x="440" y="216" text-anchor="middle" class="bus-wordmark">TOTAL <tspan class="bus-wordmark-accent">MIDIA</tspan>BUS</text>
+        </svg>
+      </div>
+
+      <div class="differentials-text">
+        <span class="eyebrow">Por que a Total MidiaBus</span>
+        <h2 class="reveal">Mídia que ninguém consegue passar direto</h2>
+        <p class="reveal">Diferente de outros formatos de mídia, o ônibus plotado não tem "pular anúncio". Sua marca fica exposta em movimento, no trânsito parado, nos pontos de ônibus e nas ruas mais movimentadas da cidade — todos os dias.</p>
+
+        <div class="feature-grid">
+          <div class="feature reveal">
+            <span class="feature-icon">🚌</span>
+            <h4>Frota ampla</h4>
+            <p>Cobertura em diversas linhas e regiões da cidade.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-icon">🎨</span>
+            <h4>Material de qualidade</h4>
+            <p>Vinil de alta durabilidade e resistência a sol e chuva.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-icon">🛠️</span>
+            <h4>Equipe especializada</h4>
+            <p>Instalação profissional sem danificar o veículo.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-icon">📊</span>
+            <h4>Relatórios de circulação</h4>
+            <p>Acompanhamento de linhas e período de exposição.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Depoimentos</span>
+        <h2>O que dizem sobre a Total MidiaBus</h2>
+      </div>
+      <div class="testimonial-grid">
+        <blockquote class="testimonial reveal">
+          <p>"A visibilidade que conseguimos com a plotagem total superou nossas expectativas. A marca ficou impossível de não ver."</p>
+          <footer>— Cliente Total MidiaBus, setor de Varejo</footer>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p>"O BackSeat trouxe um engajamento diferente: as pessoas realmente prestam atenção durante o trajeto."</p>
+          <footer>— Cliente Total MidiaBus, setor de Tecnologia</footer>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p>"Processo simples, do envio da arte à instalação. Equipe atenciosa em cada etapa."</p>
+          <footer>— Cliente Total MidiaBus, setor de Educação</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-band reveal">
+    <div class="container cta-inner">
+      <h2>Pronto para colocar sua marca nas ruas?</h2>
+      <p>Envie sua identidade visual e receba uma proposta personalizada em até 24h.</p>
+      <a href="#contato" class="btn btn-light">Falar com um consultor</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="contact" id="contato">
+    <div class="container contact-inner">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Contato</span>
+        <h2>Vamos plotar sua marca?</h2>
+        <p>Preencha o formulário ou fale diretamente com a gente. Nosso time responde o mais rápido possível.</p>
+        <ul class="contact-list">
+          <li><span>📞</span> (31) 0000-0000</li>
+          <li><span>✉️</span> contato@totalmidiabus.com.br</li>
+          <li><span>📍</span> Belo Horizonte — MG, atendimento para Minas Gerais</li>
+          <li><span>🕘</span> Seg. a Sex., 9h às 18h</li>
+        </ul>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.9.9 1.4.2.4.3 1.1.4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.9.7-1.4.9-.4.2-1.1.3-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.9-.9-1.4-.2-.4-.3-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.9-.7 1.4-.9.4-.2 1.1-.3 2.3-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1 .1-1.6.2-1.9.4-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.1.3-.3.9-.4 1.9-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1 .2 1.6.4 1.9.2.5.4.8.8 1.2.4.4.7.6 1.2.8.3.1.9.3 1.9.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1-.1 1.6-.2 1.9-.4.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.1-.3.3-.9.4-1.9.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1-.2-1.6-.4-1.9-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.3-.1-.9-.3-1.9-.4-1.2-.1-1.6-.1-4.7-.1zm0 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm5.4-2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8.5h2.9l.4-3.4h-3.3V7.9c0-1 .3-1.6 1.7-1.6h1.8V3.3C16.7 3.2 15.7 3 14.6 3c-2.5 0-4.2 1.5-4.2 4.3v2.5H7.5v3.4h2.9V22h3.1z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.4 8.1h4.2V23H.4V8.1zM8.3 8.1h4v2h.06c.56-1 1.93-2.1 3.98-2.1 4.26 0 5.05 2.8 5.05 6.4V23h-4.2v-6.7c0-1.6 0-3.7-2.24-3.7-2.25 0-2.6 1.76-2.6 3.58V23H8.3V8.1z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.5 0 .2 5.3.2 11.8c0 2.1.5 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4h.01c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.3-8.4zM12 21.4a9.5 9.5 0 0 1-4.8-1.3l-.4-.2-3.6.9 1-3.5-.2-.4A9.5 9.5 0 0 1 2.5 11.8c0-5.3 4.3-9.5 9.5-9.5 2.6 0 5 1 6.8 2.8a9.5 9.5 0 0 1 2.8 6.7c0 5.3-4.3 9.6-9.6 9.6zm5.2-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2.1-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+            <span class="error-msg"></span>
+          </div>
+          <div class="form-field">
+            <label for="company">Empresa</label>
+            <input type="text" id="company" name="company" placeholder="Nome da empresa">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@empresa.com" required>
+            <span class="error-msg"></span>
+          </div>
+          <div class="form-field">
+            <label for="phone">Telefone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required>
+            <span class="error-msg"></span>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="format">Formato de interesse</label>
+          <select id="format" name="format">
+            <option value="backbus">BackBus — traseira do ônibus</option>
+            <option value="backseat">BackSeat — traseira dos bancos</option>
+            <option value="total">Plotagem Total — ônibus inteiro</option>
+            <option value="nao-sei">Ainda não sei / quero orientação</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="4" placeholder="Conte um pouco sobre sua marca e objetivo da campanha" required></textarea>
+          <span class="error-msg"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Enviar solicitação</button>
+        <p class="form-success" id="formSuccess" role="status">Recebemos sua mensagem! Nossa equipe entrará em contato em breve.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="logo">
+        <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="50" cy="50" r="48" fill="#4E6089"/>
+          <path d="M50 2a48 48 0 0 1 0 96Z" fill="#EE8A34"/>
+          <path d="M50 26c-9.4 0-17 7.6-17 17 0 12.7 17 29 17 29s17-16.3 17-29c0-9.4-7.6-17-17-17z" fill="#fff"/>
+          <circle cx="50" cy="43" r="7" fill="#4E6089"/>
+        </svg>
+        <span class="logo-text">Total<span class="accent">Midia</span>Bus</span>
+      </a>
+      <p>Transformamos ônibus em outdoors móveis para marcas que querem ser vistas todos os dias, em todos os lugares.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Formatos</h4>
+      <ul>
+        <li><a href="#servicos">BackBus</a></li>
+        <li><a href="#servicos">BackSeat</a></li>
+        <li><a href="#servicos">Plotagem Total</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Fale conosco</h4>
+      <p>(31) 0000-0000<br>contato@totalmidiabus.com.br</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.9.9 1.4.2.4.3 1.1.4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.9.7-1.4.9-.4.2-1.1.3-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.9-.9-1.4-.2-.4-.3-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.9-.7 1.4-.9.4-.2 1.1-.3 2.3-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1 .1-1.6.2-1.9.4-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.1.3-.3.9-.4 1.9-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1 .2 1.6.4 1.9.2.5.4.8.8 1.2.4.4.7.6 1.2.8.3.1.9.3 1.9.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1-.1 1.6-.2 1.9-.4.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.1-.3.3-.9.4-1.9.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1-.2-1.6-.4-1.9-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.3-.1-.9-.3-1.9-.4-1.2-.1-1.6-.1-4.7-.1zm0 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm5.4-2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8.5h2.9l.4-3.4h-3.3V7.9c0-1 .3-1.6 1.7-1.6h1.8V3.3C16.7 3.2 15.7 3 14.6 3c-2.5 0-4.2 1.5-4.2 4.3v2.5H7.5v3.4h2.9V22h3.1z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.4 8.1h4.2V23H.4V8.1zM8.3 8.1h4v2h.06c.56-1 1.93-2.1 3.98-2.1 4.26 0 5.05 2.8 5.05 6.4V23h-4.2v-6.7c0-1.6 0-3.7-2.24-3.7-2.25 0-2.6 1.76-2.6 3.58V23H8.3V8.1z"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© <span id="year"></span> Total MidiaBus. Todos os direitos reservados.</p>
+      <p>Site institucional — modelo desenvolvido para apresentação.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="whatsapp-float" aria-label="Falar no WhatsApp" id="whatsappBtn">💬</a>
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
