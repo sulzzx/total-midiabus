@@ -17,13 +17,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a href="#top" class="logo" aria-label="Total MidiaBus - página inicial">
-      <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="50" cy="50" r="48" fill="#4E6089"/>
-        <path d="M50 2a48 48 0 0 1 0 96Z" fill="#EE8A34"/>
-        <path d="M50 26c-9.4 0-17 7.6-17 17 0 12.7 17 29 17 29s17-16.3 17-29c0-9.4-7.6-17-17-17z" fill="#fff"/>
-        <circle cx="50" cy="43" r="7" fill="#4E6089"/>
-      </svg>
-      <span class="logo-text">Total<span class="accent">Midia</span>Bus</span>
+      <img src="img/logo.png" alt="Total Mídia" class="logo-img">
     </a>
 
     <nav class="main-nav" id="mainNav">
@@ -32,12 +26,11 @@
         <li><a href="#servicos" class="nav-link">Serviços</a></li>
         <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
         <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#nossos-parceiros" class="nav-link">Nossos Parceiros</a></li>
         <li><a href="#contato" class="nav-link">Contato</a></li>
-      </ul>
     </nav>
 
     <div class="header-actions">
-      <a href="https://corrida-minas-run.vercel.app/" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Minas Run ↗</a>
       <a href="#contato" class="btn btn-primary btn-sm">Solicitar Orçamento</a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
         <span></span><span></span><span></span>
@@ -62,63 +55,18 @@
         <ul class="hero-stats">
           <li><strong data-count="500" data-suffix="+">0</strong><span>Ônibus plotados</span></li>
           <li><strong data-count="120" data-suffix="+">0</strong><span>Marcas atendidas</span></li>
-          <li><strong data-count="2" data-suffix="M+">0</strong><span>Pessoas impactadas/mês</span></li>
+          <li><strong data-count="2" data-suffix="M+">0</strong><span>Impressões diárias</span></li>
           <li><strong data-count="3" data-suffix="+">0</strong><span>Anos de estrada</span></li>
         </ul>
       </div>
 
       <div class="hero-visual reveal">
-        <svg class="bus-illustration" viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="busTitle">
-          <title id="busTitle">Ônibus plotado com as cores da Total MidiaBus</title>
-          <defs>
-            <clipPath id="busClip">
-              <rect x="90" y="90" width="700" height="160" rx="26"/>
-            </clipPath>
-          </defs>
-
-          <ellipse class="bus-shadow" cx="440" cy="330" rx="360" ry="16"/>
-
-          <rect x="76" y="116" width="16" height="26" rx="5" class="bus-outline-fill"/>
-
-          <g clip-path="url(#busClip)">
-            <rect x="90" y="90" width="700" height="160" class="bus-blue"/>
-            <polygon points="560,90 790,90 790,250 400,250" class="bus-orange"/>
-          </g>
-
-          <rect x="90" y="90" width="700" height="160" rx="26" class="bus-outline"/>
-
-          <path d="M90,130 Q90,90 130,90 L150,90 L150,140 L96,140 Q90,140 90,130 Z" class="bus-glass-front"/>
-
-          <g class="bus-window">
-            <rect x="180" y="112" width="54" height="46" rx="8"/>
-            <rect x="246" y="112" width="54" height="46" rx="8"/>
-            <rect x="312" y="112" width="54" height="46" rx="8"/>
-            <rect x="378" y="112" width="54" height="46" rx="8"/>
-            <rect x="444" y="112" width="54" height="46" rx="8"/>
-            <rect x="510" y="112" width="54" height="46" rx="8"/>
-            <rect x="576" y="112" width="54" height="46" rx="8"/>
-            <rect x="642" y="112" width="54" height="46" rx="8"/>
-            <rect x="708" y="112" width="38" height="46" rx="8"/>
-          </g>
-
-          <line x1="120" y1="160" x2="120" y2="248" class="bus-door"/>
-
-          <rect x="84" y="246" width="712" height="10" rx="5" class="bus-bumper"/>
-
-          <rect x="98" y="200" width="16" height="10" rx="3" class="bus-headlight"/>
-          <rect x="766" y="200" width="16" height="10" rx="3" class="bus-taillight"/>
-
-          <g class="wheel-group">
-            <circle cx="230" cy="258" r="36"/>
-            <circle cx="650" cy="258" r="36"/>
-          </g>
-          <g class="hub-group">
-            <circle cx="230" cy="258" r="15"/>
-            <circle cx="650" cy="258" r="15"/>
-          </g>
-
-          <text x="440" y="216" text-anchor="middle" class="bus-wordmark">TOTAL <tspan class="bus-wordmark-accent">MIDIA</tspan>BUS</text>
-        </svg>
+        <div class="hero-gallery">
+          <figure class="gallery-item"><img src="img/onibus-1.jpg" alt="Ônibus articulado com plotagem total da Coca-Cola" loading="eager"></figure>
+          <figure class="gallery-item"><img src="img/onibus-2.jpg" alt="Ônibus com plotagem da Capital das Cestas" loading="eager"></figure>
+          <figure class="gallery-item"><img src="img/onibus-3.jpg" alt="Ônibus articulado com plotagem da campanha BIS" loading="lazy"></figure>
+          <figure class="gallery-item"><img src="img/onibus-4.jpg" alt="Ônibus articulado com plotagem da Sil" loading="lazy"></figure>
+        </div>
         <div class="floating-badge badge-1">📍 Cobertura em várias cidades</div>
         <div class="floating-badge badge-2">📈 +2M de olhares por mês</div>
       </div>
@@ -238,40 +186,14 @@
   <section class="differentials" id="sobre">
     <div class="container differentials-inner">
       <div class="differentials-visual reveal">
-        <svg viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" class="bus-illustration bus-illustration-alt" aria-hidden="true">
-          <defs>
-            <clipPath id="busClip2">
-              <rect x="90" y="90" width="700" height="160" rx="26"/>
-            </clipPath>
-          </defs>
-          <ellipse class="bus-shadow" cx="440" cy="330" rx="360" ry="16"/>
-          <g clip-path="url(#busClip2)">
-            <rect x="90" y="90" width="700" height="160" class="bus-orange"/>
-            <polygon points="90,90 340,90 340,250 90,250" class="bus-blue"/>
-          </g>
-          <rect x="90" y="90" width="700" height="160" rx="26" class="bus-outline"/>
-          <g class="bus-window">
-            <rect x="180" y="112" width="54" height="46" rx="8"/>
-            <rect x="246" y="112" width="54" height="46" rx="8"/>
-            <rect x="312" y="112" width="54" height="46" rx="8"/>
-            <rect x="378" y="112" width="54" height="46" rx="8"/>
-            <rect x="444" y="112" width="54" height="46" rx="8"/>
-            <rect x="510" y="112" width="54" height="46" rx="8"/>
-            <rect x="576" y="112" width="54" height="46" rx="8"/>
-            <rect x="642" y="112" width="54" height="46" rx="8"/>
-            <rect x="708" y="112" width="38" height="46" rx="8"/>
-          </g>
-          <rect x="84" y="246" width="712" height="10" rx="5" class="bus-bumper"/>
-          <g class="wheel-group">
-            <circle cx="230" cy="258" r="36"/>
-            <circle cx="650" cy="258" r="36"/>
-          </g>
-          <g class="hub-group">
-            <circle cx="230" cy="258" r="15"/>
-            <circle cx="650" cy="258" r="15"/>
-          </g>
-          <text x="440" y="216" text-anchor="middle" class="bus-wordmark">TOTAL <tspan class="bus-wordmark-accent">MIDIA</tspan>BUS</text>
-        </svg>
+        <div class="differentials-visual reveal">
+          <div class="hero-gallery about-gallery">
+            <figure class="gallery-item"><img src="img/onibus-5.JPEG" alt="Ônibus articulado com plotagem da campanha BIS" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="img/onibus-6.JPEG" alt="Ônibus articulado com plotagem da Sil" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="img/onibus-7.JPEG" alt="Ônibus articulado com plotagem total da Coca-Cola" loading="lazy"></figure>
+            <figure class="gallery-item"><img src="img/onibus-8.JPEG" alt="Ônibus com plotagem da Capital das Cestas" loading="lazy"></figure>
+          </div>
+        </div>
       </div>
 
       <div class="differentials-text">
@@ -306,26 +228,17 @@
   </section>
 
   <!-- ===== DEPOIMENTOS ===== -->
-  <section class="testimonials">
+  <section class="testimonials" id="nossos-parceiros">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Depoimentos</span>
-        <h2>O que dizem sobre a Total MidiaBus</h2>
+        <div class="section-head reveal">
+          <span class="eyebrow">Nossos Parceiros</span>
+          <h2>Quem anuncia com a gente, roda com a gente</h2>
+        </div>
+        <div class="partners-card reveal">
+          <img src="img/parceiros.png" alt="Logos das marcas parceiras da Total MidiaBus" width="1276" height="508" loading="lazy">
+        </div>
       </div>
-      <div class="testimonial-grid">
-        <blockquote class="testimonial reveal">
-          <p>"A visibilidade que conseguimos com a plotagem total superou nossas expectativas. A marca ficou impossível de não ver."</p>
-          <footer>— Cliente Total MidiaBus, setor de Varejo</footer>
-        </blockquote>
-        <blockquote class="testimonial reveal">
-          <p>"O BackSeat trouxe um engajamento diferente: as pessoas realmente prestam atenção durante o trajeto."</p>
-          <footer>— Cliente Total MidiaBus, setor de Tecnologia</footer>
-        </blockquote>
-        <blockquote class="testimonial reveal">
-          <p>"Processo simples, do envio da arte à instalação. Equipe atenciosa em cada etapa."</p>
-          <footer>— Cliente Total MidiaBus, setor de Educação</footer>
-        </blockquote>
-      </div>
+    </section>
     </div>
   </section>
 
@@ -397,8 +310,10 @@
           <textarea id="message" name="message" rows="4" placeholder="Conte um pouco sobre sua marca e objetivo da campanha" required></textarea>
           <span class="error-msg"></span>
         </div>
+        <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button type="submit" class="btn btn-primary btn-block">Enviar solicitação</button>
         <p class="form-success" id="formSuccess" role="status">Recebemos sua mensagem! Nossa equipe entrará em contato em breve.</p>
+        <p class="form-error" id="formError" role="alert"></p>
       </form>
     </div>
   </section>
@@ -410,13 +325,7 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <a href="#top" class="logo">
-        <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="50" cy="50" r="48" fill="#4E6089"/>
-          <path d="M50 2a48 48 0 0 1 0 96Z" fill="#EE8A34"/>
-          <path d="M50 26c-9.4 0-17 7.6-17 17 0 12.7 17 29 17 29s17-16.3 17-29c0-9.4-7.6-17-17-17z" fill="#fff"/>
-          <circle cx="50" cy="43" r="7" fill="#4E6089"/>
-        </svg>
-        <span class="logo-text">Total<span class="accent">Midia</span>Bus</span>
+        <img src="img/logo.png" alt="Total Mídia" class="logo-img">
       </a>
       <p>Transformamos ônibus em outdoors móveis para marcas que querem ser vistas todos os dias, em todos os lugares.</p>
     </div>
