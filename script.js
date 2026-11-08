@@ -1,6 +1,7 @@
 /* =========================================================
    Total MidiaBus — Scripts
    ========================================================= */
+
 /* ---------------------------------------------------------
    CONFIGURAÇÃO DO FORMULÁRIO
    1. Acesse https://web3forms.com e crie uma chave (access key)
@@ -8,6 +9,11 @@
    2. Cole a chave abaixo, no lugar de COLE_SUA_ACCESS_KEY_AQUI.
    --------------------------------------------------------- */
 const WEB3FORMS_ACCESS_KEY = 'COLE_SUA_ACCESS_KEY_AQUI';
+
+/* WhatsApp da Total MidiaBus (formato: 55 + DDD + número, só dígitos).
+   Número do Instagram: (31) 7127-5725. Celulares têm 9 dígitos, então foi usado
+   5531 9 7127-5725. Se o número real for outro, troque só esta linha. */
+const WHATSAPP_NUMBER = '5531971275725';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -113,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const whatsappBtn = document.getElementById('whatsappBtn');
   whatsappBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    const phone = '5511000000000';
+    const phone = WHATSAPP_NUMBER;
     const message = encodeURIComponent('Olá! Gostaria de saber mais sobre a plotagem de ônibus da Total MidiaBus.');
     window.open(`https://wa.me/${phone}?text=${message}`, '_blank', 'noopener');
   });
@@ -233,6 +239,53 @@ document.addEventListener('DOMContentLoaded', () => {
       setSending(false);
     }
   });
+
+  /* ---------- Hero: fotos de fundo passando automaticamente ---------- */
+  const heroSlides = document.querySelectorAll('.hero-slide');
+  const heroDotsWrap = document.querySelector('.hero-dots');
+
+  if (heroSlides.length > 1) {
+    const SLIDE_INTERVAL = 6500; // tempo de cada foto (ms)
+    let current = 0;
+    let timer = null;
+    const dots = [];
+
+    const goTo = (index) => {
+      current = (index + heroSlides.length) % heroSlides.length;
+      heroSlides.forEach((slide, i) => slide.classList.toggle('is-active', i === current));
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('is-active', i === current);
+        dot.setAttribute('aria-selected', String(i === current));
+      });
+    };
+
+    const start = () => {
+      stop();
+      timer = setInterval(() => goTo(current + 1), SLIDE_INTERVAL);
+    };
+    const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+
+    if (heroDotsWrap) {
+      heroSlides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'hero-dot';
+        dot.setAttribute('role', 'tab');
+        dot.setAttribute('aria-label', `Mostrar foto ${i + 1} de ${heroSlides.length}`);
+        dot.addEventListener('click', () => { goTo(i); start(); });
+        heroDotsWrap.appendChild(dot);
+        dots.push(dot);
+      });
+    }
+
+    goTo(0);
+    start();
+
+    // Pausa quando a aba não está visível (economiza bateria e evita "pulos")
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) stop(); else start();
+    });
+  }
 
   /* ---------- Footer year ---------- */
   const yearEl = document.getElementById('year');
