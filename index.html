@@ -43,42 +43,44 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="inicio">
-    <div class="container hero-inner">
-      <div class="hero-text reveal">
-        <span class="eyebrow">Mídia Exterior de Alto Impacto</span>
-        <h1>Sua marca rodando <span class="accent">a cidade inteira</span></h1>
-        <p class="hero-lead">A Total MidiaBus transforma a frota urbana em outdoors móveis. Enviamos sua identidade visual, você escolhe o formato e nós cuidamos de tudo: da arte à instalação.</p>
-        <div class="hero-cta">
-          <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
-          <a href="#servicos" class="btn btn-outline">Ver Formatos de Plotagem</a>
-        </div>
-        <ul class="hero-stats">
-          <li><strong data-count="500" data-suffix="+">0</strong><span>Ônibus plotados</span></li>
-          <li><strong data-count="120" data-suffix="+">0</strong><span>Marcas atendidas</span></li>
-          <li><strong data-count="2" data-suffix="M+">0</strong><span>Impressões diárias</span></li>
-          <li><strong data-count="3" data-suffix="+">0</strong><span>Anos de estrada</span></li>
-        </ul>
-      </div>
+  <!-- Carrossel de fotos no fundo -->
+  <div class="hero-slider" aria-hidden="true">
+    <div class="hero-slide is-active"><img src="img/onibus-1.jpg" alt="" fetchpriority="high"></div>
+    <div class="hero-slide"><img src="img/onibus-2.jpg" alt="" loading="lazy"></div>
+    <div class="hero-slide"><img src="img/onibus-3.jpg" alt="" loading="lazy"></div>
+    <div class="hero-slide"><img src="img/onibus-4.jpg" alt="" loading="lazy"></div>
+  </div>
+  <!-- Máscara escura por cima das fotos -->
+  <div class="hero-overlay"></div>
 
-      <div class="hero-visual reveal">
-        <div class="hero-gallery">
-          <figure class="gallery-item"><img src="img/onibus-1.jpg" alt="Ônibus articulado com plotagem total da Coca-Cola" loading="eager"></figure>
-          <figure class="gallery-item"><img src="img/onibus-2.jpg" alt="Ônibus com plotagem da Capital das Cestas" loading="eager"></figure>
-          <figure class="gallery-item"><img src="img/onibus-3.jpg" alt="Ônibus articulado com plotagem da campanha BIS" loading="lazy"></figure>
-          <figure class="gallery-item"><img src="img/onibus-4.jpg" alt="Ônibus articulado com plotagem da Sil" loading="lazy"></figure>
-        </div>
-        <div class="floating-badge badge-1">📍 Cobertura em várias cidades</div>
-        <div class="floating-badge badge-2">📈 +2M de olhares por mês</div>
+  <div class="container hero-inner">
+    <div class="hero-text reveal">
+      <span class="eyebrow">Mídia Exterior de Alto Impacto</span>
+      <h1>Sua marca rodando <span class="accent">BH e Região Metropolitana</span></h1>
+      <p class="hero-lead">Escolha como sua marca aparece no ônibus, defina onde quer ser vista e nós montamos a estratégia: quantidade de ônibus, linhas, regiões e período da campanha, de acordo com seu objetivo e investimento.</p>
+      <div class="hero-cta">
+        <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+        <a href="#servicos" class="btn btn-outline">Ver Formatos de Plotagem</a>
       </div>
+      <ul class="hero-stats">
+        <li><strong data-count="500" data-suffix="+">0</strong><span>Ônibus plotados</span></li>
+        <li><strong data-count="120" data-suffix="+">0</strong><span>Marcas atendidas</span></li>
+        <li><strong data-count="2" data-suffix="M+">0</strong><span>Impressões diárias</span></li>
+        <li><strong data-count="15" data-suffix="+">0</strong><span>Anos de estrada</span></li>
+      </ul>
     </div>
-  </section>
+  </div>
+
+  <!-- Bolinhas do carrossel (criadas pelo script.js) -->
+  <div class="hero-dots" role="tablist" aria-label="Fotos dos ônibus"></div>
+</section>
 
   <!-- ===== SERVIÇOS / FORMATOS ===== -->
   <section class="services" id="servicos">
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Formatos de Plotagem</span>
-        <h2>Três formas de colocar sua marca nas ruas</h2>
+        <h2>Quatro formas de colocar sua marca nas ruas</h2>
         <p>Escolha o formato que combina com sua estratégia e orçamento. Em todos eles, cuidamos do projeto gráfico, da impressão e da instalação na frota.</p>
       </div>
 
@@ -134,7 +136,7 @@
             </svg>
           </div>
           <span class="service-tag">Formato 03</span>
-          <h3>Plotagem Total</h3>
+          <h3>Envelopamento Total</h3>
           <p>O ônibus inteiro se transforma em um outdoor 360°. Máxima visibilidade e impacto de marca, impossível de ignorar em qualquer ângulo.</p>
           <ul class="service-list">
             <li>Visibilidade máxima em toda a cidade</li>
@@ -143,6 +145,31 @@
           </ul>
           <a href="#contato" class="service-link">Quero este formato →</a>
         </article>
+
+        <article class="service-card featured reveal">
+            <div class="service-icon icon-art">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <rect x="3" y="20" width="31" height="22" rx="6" fill="none" stroke="currentColor" stroke-width="3"/>
+                <rect x="40" y="20" width="21" height="22" rx="5" fill="none" stroke="currentColor" stroke-width="3"/>
+                <path d="M34 25h6M34 31h6M34 37h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <rect x="8" y="25" width="7" height="7" rx="1.5" fill="currentColor" opacity=".2"/>
+                <rect x="20" y="25" width="7" height="7" rx="1.5" fill="currentColor" opacity=".2"/>
+                <rect x="45" y="25" width="7" height="7" rx="1.5" fill="currentColor" opacity=".2"/>
+                <circle cx="13" cy="46" r="4.5" fill="currentColor"/>
+                <circle cx="29" cy="46" r="4.5" fill="currentColor"/>
+                <circle cx="51" cy="46" r="4.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="service-tag">Formato 04</span>
+            <h3>Envelopamento Articulado</h3>
+            <p>Plotagem completa em ônibus articulados, com a arte percorrendo toda a extensão do veículo, inclusive a articulação. Um outdoor longo, em movimento pelos principais corredores da cidade.</p>
+            <ul class="service-list">
+              <li>Maior área de exposição por veículo</li>
+              <li>Arte contínua, de ponta a ponta</li>
+              <li>Impacto máximo em avenidas e corredores</li>
+            </ul>
+            <a href="#contato" class="service-link">Quero este formato →</a>
+          </article>
 
       </div>
     </div>
@@ -235,7 +262,10 @@
           <h2>Quem anuncia com a gente, roda com a gente</h2>
         </div>
         <div class="partners-card reveal">
-          <img src="img/parceiros.png" alt="Logos das marcas parceiras da Total MidiaBus" width="1276" height="508" loading="lazy">
+          <picture>
+          <source media="(max-width: 760px)" srcset="img/parceiros-mobile.png" width="1000" height="2899">
+          <img src="img/parceiros.png" alt="Logos das marcas parceiras da Total MidiaBus" width="2200" height="1072" loading="lazy">
+        </picture>
         </div>
       </div>
     </section>
@@ -301,7 +331,8 @@
           <select id="format" name="format">
             <option value="backbus">BackBus — traseira do ônibus</option>
             <option value="backseat">BackSeat — traseira dos bancos</option>
-            <option value="total">Plotagem Total — ônibus inteiro</option>
+            <option value="total">Envelopamento Total — ônibus inteiro</option>
+            <option value="articulado">Envelopamento Articulado — ônibus articulado</option>
             <option value="nao-sei">Ainda não sei / quero orientação</option>
           </select>
         </div>
@@ -335,7 +366,8 @@
       <ul>
         <li><a href="#servicos">BackBus</a></li>
         <li><a href="#servicos">BackSeat</a></li>
-        <li><a href="#servicos">Plotagem Total</a></li>
+        <li><a href="#servicos">Envelopamento Total</a></li>
+        <li><a href="#servicos">Envelopamento Articulado</a></li>
       </ul>
     </div>
 
