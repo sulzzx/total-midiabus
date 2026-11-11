@@ -14,9 +14,9 @@ const WEB3FORMS_ACCESS_KEY = '71c73155-84e2-4062-af30-65307ed2a76c';
    Número do Instagram: (31) 7127-5725. Celulares têm 9 dígitos, então foi usado
    5531 9 7127-5725. Se o número real for outro, troque só esta linha. */
 const WHATSAPP_NUMBER = '5531971275725';
- 
+
 document.addEventListener('DOMContentLoaded', () => {
- 
+
   /* ---------- Header: shrink + shadow on scroll ---------- */
   const header = document.getElementById('siteHeader');
   const onScrollHeader = () => {
@@ -25,17 +25,17 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   onScrollHeader();
   window.addEventListener('scroll', onScrollHeader, { passive: true });
- 
+
   /* ---------- Mobile nav toggle ---------- */
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');
- 
+
   navToggle.addEventListener('click', () => {
     const isOpen = mainNav.classList.toggle('open');
     navToggle.classList.toggle('open', isOpen);
     navToggle.setAttribute('aria-expanded', String(isOpen));
   });
- 
+
   mainNav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       mainNav.classList.remove('open');
@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
       navToggle.setAttribute('aria-expanded', 'false');
     });
   });
- 
+
   /* ---------- Active nav link on scroll (IntersectionObserver) ---------- */
   const sections = document.querySelectorAll('main section[id], main#top');
   const navLinks = document.querySelectorAll('.nav-link');
- 
+
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
- 
+
   document.querySelectorAll('section[id]').forEach(sec => sectionObserver.observe(sec));
- 
+
   /* ---------- Reveal on scroll ---------- */
   const revealEls = document.querySelectorAll('.reveal');
   const revealObserver = new IntersectionObserver((entries, obs) => {
@@ -71,9 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { threshold: 0.15 });
- 
+
   revealEls.forEach(el => revealObserver.observe(el));
- 
+
   /* ---------- Animated counters (hero stats) ---------- */
   const counters = document.querySelectorAll('.hero-stats strong');
   const animateCounter = (el) => {
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const suffix = el.getAttribute('data-suffix') || '';
     const duration = 1400;
     const start = performance.now();
- 
+
     const step = (now) => {
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     requestAnimationFrame(step);
   };
- 
+
   const statsObserver = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -101,43 +101,43 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { threshold: 0.6 });
- 
+
   counters.forEach(el => statsObserver.observe(el));
- 
+
   /* ---------- Back to top button ---------- */
   const backToTop = document.getElementById('backToTop');
   window.addEventListener('scroll', () => {
     backToTop.classList.toggle('show', window.scrollY > 500);
   }, { passive: true });
- 
+
   backToTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
- 
+
   /* ---------- WhatsApp floating button ---------- */
   const whatsappBtn = document.getElementById('whatsappBtn');
   whatsappBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    const phone = '5531971275725'; // Número do WhatsApp da Total MidiaBus
+    const phone = WHATSAPP_NUMBER;
     const message = encodeURIComponent('Olá! Gostaria de saber mais sobre a plotagem de ônibus da Total MidiaBus.');
     window.open(`https://wa.me/${phone}?text=${message}`, '_blank', 'noopener');
   });
- 
+
   /* ---------- Contact form validation + envio de e-mail ---------- */
   const form = document.getElementById('contactForm');
   const successMsg = document.getElementById('formSuccess');
   const errorMsg = document.getElementById('formError');
   const submitBtn = form.querySelector('button[type="submit"]');
   const submitBtnLabel = submitBtn.textContent;
- 
+
   const validators = {
     name: (v) => v.trim().length >= 2 || 'Informe seu nome completo.',
     email: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) || 'Informe um e-mail válido.',
     phone: (v) => v.trim().replace(/\D/g, '').length >= 10 || 'Informe um telefone válido com DDD.',
     message: (v) => v.trim().length >= 10 || 'Conte um pouco mais sobre sua marca (mín. 10 caracteres).',
   };
- 
+
   const showFieldError = (field, msg) => {
     const wrapper = field.closest('.form-field');
     const errorEl = wrapper.querySelector('.error-msg');
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (errorEl) errorEl.textContent = '';
     }
   };
- 
+
   const validateField = (field) => {
     const rule = validators[field.name];
     if (!rule) return true;
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showFieldError(field, result);
     return false;
   };
- 
+
   ['name', 'email', 'phone', 'message'].forEach(fieldName => {
     const field = form.elements[fieldName];
     if (field) {
@@ -171,35 +171,35 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
- 
+
   const setSending = (isSending) => {
     submitBtn.disabled = isSending;
     submitBtn.textContent = isSending ? 'Enviando...' : submitBtnLabel;
   };
- 
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     successMsg.classList.remove('show');
     if (errorMsg) errorMsg.classList.remove('show');
- 
+
     let isValid = true;
     ['name', 'email', 'phone', 'message'].forEach(fieldName => {
       const field = form.elements[fieldName];
       if (field && !validateField(field)) isValid = false;
     });
- 
+
     if (!isValid) {
       const firstInvalid = form.querySelector('.form-field.invalid input, .form-field.invalid textarea');
       if (firstInvalid) firstInvalid.focus();
       return;
     }
- 
+
     // Campo escondido anti-spam: robôs costumam preencher, pessoas não.
     if (form.elements['botcheck'] && form.elements['botcheck'].checked) return;
- 
+
     const formatSelect = form.elements['format'];
     const formatLabel = formatSelect.options[formatSelect.selectedIndex].text;
- 
+
     const payload = {
       access_key: WEB3FORMS_ACCESS_KEY,
       subject: 'Novo pedido de orçamento — Total MidiaBus',
@@ -211,9 +211,9 @@ document.addEventListener('DOMContentLoaded', () => {
       formato_de_interesse: formatLabel,
       message: form.elements['message'].value.trim(),
     };
- 
+
     setSending(true);
- 
+
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body: JSON.stringify(payload),
       });
       const result = await response.json();
- 
+
       if (response.ok && result.success) {
         successMsg.classList.add('show');
         form.reset();
@@ -239,17 +239,17 @@ document.addEventListener('DOMContentLoaded', () => {
       setSending(false);
     }
   });
- 
+
   /* ---------- Hero: fotos de fundo passando automaticamente ---------- */
   const heroSlides = document.querySelectorAll('.hero-slide');
   const heroDotsWrap = document.querySelector('.hero-dots');
- 
+
   if (heroSlides.length > 1) {
     const SLIDE_INTERVAL = 6500; // tempo de cada foto (ms)
     let current = 0;
     let timer = null;
     const dots = [];
- 
+
     const goTo = (index) => {
       current = (index + heroSlides.length) % heroSlides.length;
       heroSlides.forEach((slide, i) => slide.classList.toggle('is-active', i === current));
@@ -258,13 +258,13 @@ document.addEventListener('DOMContentLoaded', () => {
         dot.setAttribute('aria-selected', String(i === current));
       });
     };
- 
+
     const start = () => {
       stop();
       timer = setInterval(() => goTo(current + 1), SLIDE_INTERVAL);
     };
     const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
- 
+
     if (heroDotsWrap) {
       heroSlides.forEach((_, i) => {
         const dot = document.createElement('button');
@@ -277,19 +277,18 @@ document.addEventListener('DOMContentLoaded', () => {
         dots.push(dot);
       });
     }
- 
+
     goTo(0);
     start();
- 
+
     // Pausa quando a aba não está visível (economiza bateria e evita "pulos")
     document.addEventListener('visibilitychange', () => {
       if (document.hidden) stop(); else start();
     });
   }
- 
+
   /* ---------- Footer year ---------- */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
- 
+
 });
- 
