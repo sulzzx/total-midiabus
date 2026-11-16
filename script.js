@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const whatsappBtn = document.getElementById('whatsappBtn');
   whatsappBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    const phone = WHATSAPP_NUMBER;
+    const phone = 5531971275725;
     const message = encodeURIComponent('Olá! Gostaria de saber mais sobre a plotagem de ônibus da Total MidiaBus.');
     window.open(`https://wa.me/${phone}?text=${message}`, '_blank', 'noopener');
   });
